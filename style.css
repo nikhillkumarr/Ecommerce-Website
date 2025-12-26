@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #222;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    color: #f9d423;
+}
+
+/* HERO */
+.hero {
+    height: 60vh;
+    background: linear-gradient(to right, #ff4e50, #f9d423);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* CATEGORIES */
+.categories {
+    padding: 50px;
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.category {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: #ff4e50;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* OFFERS */
+.offers {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+.offers button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    background: #f9d423;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar nav {
+        margin-top: 10px;
+    }
+}
